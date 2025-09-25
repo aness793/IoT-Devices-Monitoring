@@ -1,0 +1,26 @@
+version: "3"
+services:
+  broker:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+
+  backend:
+    build: ./backend
+    depends_on:
+      - broker
+    ports:
+      - "8000:8000"
+
+  mqtt_subscriber:
+    build: ./backend
+    depends_on:
+      - broker
+    command: python mqtt_subscriber.py
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build: ./frontend/dashboard
+    ports:
+      - "3000:3000"

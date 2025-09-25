@@ -1,0 +1,63 @@
+
+body {
+  font-family: 'Barlow', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+  text-transform: capitalize;
+}
+.data_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+}
+h2{
+  margin: 0 auto;
+  color: red;
+}
+.bar {
+  display:flex;
+  gap:1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: fit-content;
+  height: 3rem;
+  border-bottom: 1px solid black;
+  background-color: whitesmoke;
+
+  
+}
+.display:first-child{
+  border-top: none;
+}
+label input, label select {
+  margin-left: 4px;
+}
+.display {
+  display:grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+.display_all {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3rem;
+}
+.title {
+  font-weight: 600;
+}
+.display_all.alert_display,
+.display.alert_display {
+  background: #be950e;
+}
+
+.cell.alert .value {
+  color: #b91c1c;
+  font-weight: 700;
+}
