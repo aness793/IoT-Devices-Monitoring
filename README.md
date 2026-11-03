@@ -2,9 +2,7 @@
 
 A real-time dashboard that brings every IoT device into one view, so you can track their readings and spot abnormal values at a glance.
 
-![IoT Device Monitor dashboard](docs/dashboard.png)
-
-## What it does
+![](./shot-all-1440.png)## What it does
 
 - Shows the latest temperature, humidity and pressure from each device, with a bar and a threshold tick on every metric
 - Flags readings that go over their limit (amber highlight, red value)
